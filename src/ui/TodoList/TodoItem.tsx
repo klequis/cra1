@@ -1,10 +1,15 @@
 import * as React from 'react'
+import withStyles, {WithStyles} from 'react-jss'
 import cx from 'classnames'
 import { Todo } from 'global-types'
 
-const TodoItem = ({ todo }: { todo: Todo }) => {
+interface IProps extends WithStyles<typeof styles> {
+  todo: Todo
+}
+
+const TodoItem: React.FunctionComponent<IProps> = ({ todo, classes }) => {
   return (
-    <li className='todo-item'>
+    <li className={classes.wrapper}>
       {todo && todo.completed ? '-' : '+'}{' '}
       <span
         className={cx(
@@ -18,4 +23,13 @@ const TodoItem = ({ todo }: { todo: Todo }) => {
   )
 }
 
-export default TodoItem
+const styles = {
+  wrapper: {
+    margin:  10,
+    padding: '1rem',
+    backgroundColor: '#fff',
+    color: 'black',
+  }
+}
+
+export default withStyles(styles)(TodoItem)

@@ -5,7 +5,6 @@ import TodoList from 'ui/TodoList'
 // import { green } from 'logger'
 
 interface IProps extends WithStyles<typeof styles> {
-  classes: any
   children: React.ReactNode
 }
 

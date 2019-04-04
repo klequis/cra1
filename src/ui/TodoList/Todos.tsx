@@ -10,7 +10,6 @@ interface IProps extends WithStyles<typeof styles> {
 const TodoList: React.FunctionComponent<IProps> = ({ todos, classes }) => {
   return (
     <div>
-      <b>The List</b>
       <ul className={classes.list}>
         {todos && todos.length
           ? todos.map((todo, index) => {

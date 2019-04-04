@@ -1,5 +1,5 @@
 import React from 'react'
-import withStyles, {WithStyles} from 'react-jss'
+import withStyles from 'react-jss'
 import { compose } from 'recompose'
 import App from 'ui/App'
 

@@ -14,20 +14,32 @@ const App:  React.FunctionComponent<IProps> = (props) => {
   const { classes } = props
   return (
     <div className={classes.wrapper}>
+    <div className={classes.add}>
       <AddTodo />
+    </div>
+    <div className={classes.todo}>
       <TodoList />
+    </div>
     </div>
   )
 }
 
 const styles = {
   wrapper: {
-    // backgroundColor: 'red',
     minHeight: '100vh',
     display: 'flex',
     flexFlow: 'column nowrap',
-    // justifyContent: 'space-between',
+    // maxWidth: 500,
+    alignItems: 'center',
+    marginTop: 50,
+
   },
+  add: {
+    marginBottom: 50,
+  },
+  todo: {
+    backgroundColor: 'red'
+  }
 }
 
 export default withStyles(styles)(App)

@@ -6,7 +6,6 @@ import { getAllTodos } from '../../redux/todo/selectors'
 import { TODOS_READ_REQUEST_KEY } from 'redux/todo/constants'
 import { getRequest } from 'redux/requests/selectors';
 import { AppState, Todo } from 'global-types'
-import { green } from 'logger'
 
 interface IProps {
   todos: Todo[]
@@ -17,11 +16,9 @@ interface IProps {
 class TodoContainer extends React.Component<IProps, []> {
   componentDidMount() {
     this.props.todosReadRequest()
-    // this.props.todosReadByIdRequest('5c91aeb8e543802dd5579eef')
   }
 
   deleteClick = (_id: string) => {
-    green('TodosContainer.deleteClick()')
     this.props.todoDeleteRequest(_id)
   }
   render() {

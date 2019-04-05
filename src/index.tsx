@@ -4,7 +4,6 @@ import { Provider } from 'react-redux'
 import configureStore from './redux'
 
 import Wrapper from './Wrapper'
-// import './index.css'
 
 const store = configureStore()
 

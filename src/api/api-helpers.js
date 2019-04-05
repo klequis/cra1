@@ -1,9 +1,5 @@
-/* Dev */
-// eslint-disable-next-line
-import { pink } from 'logger'
 
 export const fetchJson = (url, options = {}) => {
-  // pink('(3) api-helpers.fetchJson()')
   let headers = {
     ...options.headers,
     'Accept': 'application/json',
@@ -18,7 +14,6 @@ export const fetchJson = (url, options = {}) => {
       if (status >= 200 && status < 300) {
         return res.json()
       } else {
-        // pink('(4) api-helpers.fetchJson: bad response', res)
         const err = {
           status: res.status,
           statusText: res.statusText,
@@ -29,6 +24,5 @@ export const fetchJson = (url, options = {}) => {
     })
   )
 }
-
 
 export default { fetchJson }

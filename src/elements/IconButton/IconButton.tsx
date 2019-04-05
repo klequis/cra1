@@ -23,7 +23,6 @@ const IconButton: React.FunctionComponent<IProps> = ({ children, classes, alt, o
 const styles = {
 root: {
     alignItems: 'center',
-    // backgroundColor: 'rgb(157, 0, 56)',
     backgroundColor: 'transparent',
     borderImageOutset: 0,
     borderImageRepeat: 'stretch',
@@ -48,8 +47,6 @@ root: {
     letterSpacing: 0.4,
     minHeight: 36,
     minWidth: 0,
-    // outlineColor: 'rgb(200, 140, 155)',
-    // outlineColor: 'red',
     outlineStyle: 'none',
     outlineWidth: 0,
     padding: 0,
@@ -66,7 +63,6 @@ root: {
     MozAppearance: 'none',
     MozUserSelect: 'none',
     '&:hover': {
-      // backgroundColor: hoverColor,
       backgroundColor: 'rgba(167, 167, 167, 1)',
       // Reset on touch devices, it doesn't add specificity
       '@media (hover: none)': {
@@ -77,9 +73,6 @@ root: {
     '&:active': {
       boxShadow: '0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12)',
     },
-    // '&:focus': {
-    //   outline: 0,
-    // },
     '&::-moz-focus-inner': {
       border: 'none'
     }

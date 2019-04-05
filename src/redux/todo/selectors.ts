@@ -1,5 +1,4 @@
 import { Todo } from 'global-types'
-// import { yellow } from 'logger'
 
 type TodoState = {
   todos: Todo[]

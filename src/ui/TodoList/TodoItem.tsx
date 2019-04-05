@@ -18,7 +18,6 @@ const TodoItem: React.FunctionComponent<IProps> = ({ todo, classes, deleteClick 
   }
   return (
     <div className={classes.wrapper}>
-      {/* {todo && todo.completed ? '-' : '+'}{' '} */}
       {todo.title}
       <div>
         <DeleteButton

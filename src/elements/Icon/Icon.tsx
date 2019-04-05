@@ -3,7 +3,6 @@ import withStyles, {WithStyles} from 'react-jss'
 
 
 interface IProps {
-  // TODO: find specific type for children. Array? of?
   children: any
   alt: string
 }

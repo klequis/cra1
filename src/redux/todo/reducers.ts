@@ -3,8 +3,7 @@ import {
   TODOS_READ_KEY
 } from './constants'
 
-import { /*Action,*/ Todo } from 'global-types'
-// import { blue } from 'logger'
+import { Todo } from 'global-types'
 
 export function todosReducer(
   state: Todo[] = [],

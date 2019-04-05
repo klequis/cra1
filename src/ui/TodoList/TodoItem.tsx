@@ -9,7 +9,7 @@ interface IProps extends WithStyles<typeof styles> {
 
 const TodoItem: React.FunctionComponent<IProps> = ({ todo, classes }) => {
   return (
-    <li className={classes.wrapper}>
+    <div className={classes.wrapper}>
       {todo && todo.completed ? '-' : '+'}{' '}
       <span
         className={cx(
@@ -19,7 +19,7 @@ const TodoItem: React.FunctionComponent<IProps> = ({ todo, classes }) => {
       >
         {todo.title}
       </span>
-    </li>
+    </div>
   )
 }
 

@@ -9,21 +9,19 @@ interface IProps extends WithStyles<typeof styles> {
 
 const TodoList: React.FunctionComponent<IProps> = ({ todos, classes }) => {
   return (
-    <div>
-      <ul className={classes.list}>
-        {todos && todos.length
-          ? todos.map((todo, index) => {
-              return <TodoItem key={`todo-${todo._id}`} todo={todo} />
-            })
-          : "No todos, yay!"}
-      </ul>
+    <div className={classes.wrapper}>
+      {todos && todos.length
+        ? todos.map((todo, index) => {
+            return <TodoItem key={`todo-${todo._id}`} todo={todo} />
+          })
+        : "No todos, yay!"}
     </div>
   )
 }
 
 const styles = {
-  list: {
-    listStyleType: 'none',
+  wrapper: {
+    minWidth: 320,
   }
 }
 

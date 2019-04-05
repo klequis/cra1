@@ -1,1 +1,7 @@
-Don't look here. Going merge into another project and then delete this repo.
+
+
+
+<a href="https://youtu.be/OP79vUQUJUg"
+" target="_blank"><img src="https://github.com/klequis/cra1/blob/master/screenshot2.png"
+alt="upload to s3 app screenshot" width="630" height="828" border="10" /></a>
+
